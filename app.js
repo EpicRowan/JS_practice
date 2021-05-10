@@ -29,9 +29,52 @@ const game = () => {
 				//computer choice
 				const computerNumber = Math.floor(Math.random() * 3);
 				const computerChoice = computerOptions[computerNumber]
+
+				// Call compare hands
 			});
 		});
 	};
+
+	const compareHands = (playerChoice, computerChoice) => {
+		const winner = document.querySelector('.winner');
+
+		// Check for a tie
+		if (playerChoice === computerChoice) {
+			winner.textContent = "Tie!";
+			return;
+		}
+
+		// Check for rock
+		if (playerChoice === 'rock') {
+			if (computerChoice === 'scissors') {
+				winner.textContent = "You win!";
+				return;
+			}else{
+				winner.textContent = "You Lose";
+				return;
+			}
+		}
+		// Check for paper
+		if (playerChoice === 'paper') {
+			if (computerChoice === 'scissors') {
+				winner.textContent = "You Lose";
+				return;
+			}else{
+				winner.textContent = "You Win!";
+				return;
+			}
+		}
+		// Check for scissors
+		if (playerChoice === 'scissors') {
+			if (computerChoice === 'paper') {
+				winner.textContent = "You win!";
+				return;
+			}else{
+				winner.textContent = "You Lose";
+				return;
+			}
+		}
+	}
 
 	startGame();
 	playMatch();
