@@ -18,19 +18,23 @@ const game = () => {
 	//Play game
 	const playMatch = () => {
 		const options = document.querySelectorAll('.options button');
-		const playerHand = document.querySelector('player-hand');
-		const computerHand = document.querySelector('computer-hand');
+		const playerHand = document.querySelector('.player-hand');
+		const computerHand = document.querySelector('.computer-hand');
 
 		// Computer options
 		const computerOptions = ['rock', 'paper', 'scissors'];
 
 		options.forEach(option => {
-			option.addEventListener('click', function() {
+			option.addEventListener('click', function(){
 				//computer choice
 				const computerNumber = Math.floor(Math.random() * 3);
-				const computerChoice = computerOptions[computerNumber]
+				const computerChoice = computerOptions[computerNumber];
 
 				// Call compare hands
+				console.log(`./static/${this.textContent}.png`)
+				//Update images
+				playerHand.src = `./static/${this.textContent}.png`;
+				computerHand.src = `./static/${computerChoice}.png`;
 			});
 		});
 	};
