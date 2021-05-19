@@ -31,7 +31,8 @@ const game = () => {
 				const computerChoice = computerOptions[computerNumber];
 
 				// Call compare hands
-				console.log(`./static/${this.textContent}.png`)
+				compareHands(this.textContent, computerChoice)
+				
 				//Update images
 				playerHand.src = `./static/${this.textContent}.png`;
 				computerHand.src = `./static/${computerChoice}.png`;
