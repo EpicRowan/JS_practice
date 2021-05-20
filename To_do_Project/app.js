@@ -12,6 +12,17 @@ function addToDo(event) {
     //prevent form from submitting
     event.preventDefault();
 
-    console.log("I'm working");
+    /*Goal to create
+    <div class="todo-container">
+    <ul class="todo-list">
+        <div class="todo">
+            <li></li>
+        </div>
+    </ul>
+    </div> */
+
+    const todoDiv = document.createElement('div');
+    // create with a class of "todo"
+    todoDiv.classList.add('todo')
 
 }
