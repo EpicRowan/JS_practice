@@ -23,6 +23,11 @@ function addToDo(event) {
 
     const todoDiv = document.createElement('div');
     // create with a class of "todo"
-    todoDiv.classList.add('todo')
+    todoDiv.classList.add('todo');
+    // create li
+    const newTodo = document.createElement('li');
+    newTodo.innerText = 'hey';
+    newTodo.classList.add('todo-item');
+    todoDiv.appendChild(newTodo);
 
 }
