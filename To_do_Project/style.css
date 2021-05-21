@@ -9,3 +9,26 @@ form {
   justify-content: center;
   display: flex;
 }
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo-list {
+  list-style: none;
+  min-width: 30%;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem;
+  background: yellow;
+  color: black;
+}
+
+.todo li {
+  flex: 1;
+}
