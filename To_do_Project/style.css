@@ -32,3 +32,8 @@ form {
 .todo li {
   flex: 1;
 }
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
