@@ -9,3 +9,14 @@ form {
   justify-content: center;
   display: flex;
 }
+
+.q-container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background: yellow;
+  color: black;
+  margin: 20px;
+  padding: 20px;
+  font-size: 20px;
+}
