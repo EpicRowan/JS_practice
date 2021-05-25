@@ -16,6 +16,7 @@
 
 const questions = document.querySelectorAll('.questions');
 
-questions.forEach(function(e) {
-    console.log(e);
+questions.forEach(function(question) {
+    const btn = question.querySelector('.q-button');
+    console.log(btn);
 });
