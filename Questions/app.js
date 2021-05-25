@@ -5,9 +5,9 @@ const btns = document.querySelectorAll(".q-button");
 
 //Event Handlers
 
-
 btns.forEach(function(btn) {
     btn.addEventListener('click', function(e){
-        console.log("hi");
+        const question= e.currentTarget.parentElement.parentElement;
+        question.classList.toggle('show-text');
     });
 });
