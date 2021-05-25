@@ -29,5 +29,21 @@ form {
   color: black;
   margin: 20px;
   font-size: 20px;
-  transform: scale(0);
+  display: none;
+}
+
+.show-text .answer {
+  display: block;
+}
+
+.show-text .minus-icon {
+  display: inline;
+}
+
+.show-text .plus-icon {
+  display: none;
+}
+
+.minus-icon {
+  display: none;
 }
