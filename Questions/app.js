@@ -18,5 +18,7 @@ const questions = document.querySelectorAll('.questions');
 
 questions.forEach(function(question) {
     const btn = question.querySelector('.q-button');
-    console.log(btn);
+btn.addEventListener('click', function() {
+    question.classList.toggle("show-text");
+})
 });
